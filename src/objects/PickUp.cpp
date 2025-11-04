@@ -1,12 +1,13 @@
 #include "PickUp.h"
 #include "raylib.h"
 
-PickUp::PickUp() : Entity(x, y, w, h)
+PickUp::PickUp(TypeOfPickUps typeOfPickUp) : Entity(x, y, w, h)
 {
 	isPicked = false;
 	points = PICKUP_POINTS;
 	w = PICKUP_WIDTH;
 	h = PICKUP_HEIGHT;
+	this->typeOfPickUp = typeOfPickUp;
 }
 
 PickUp::~PickUp()

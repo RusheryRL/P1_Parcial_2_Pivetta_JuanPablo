@@ -13,8 +13,9 @@ class PickUp : public Entity
 private:
 	bool isPicked;
 	int points;
+	TypeOfPickUps typeOfPickUp;
 public:
-	PickUp();
+	PickUp(TypeOfPickUps typeOfPickUp);
 	~PickUp();
 
 	void draw() override;
