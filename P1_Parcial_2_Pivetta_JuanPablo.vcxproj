@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\game\Game.cpp" />
     <ClCompile Include="src\game\HUD.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\objects\Enemy.cpp" />
@@ -27,6 +28,7 @@
     <ClCompile Include="src\objects\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\game\Game.h" />
     <ClInclude Include="src\game\HUD.h" />
     <ClInclude Include="src\objects\Enemy.h" />
     <ClInclude Include="src\objects\Entity.h" />

@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "raylib.h"
 
-Player::Player() : Entity(x, y, w, h)
+Player::Player() : Entity(x, y, w, h, color)
 {
 	this->currentHP = MAX_PLAYER_LIVES;
 	this->currentMovements = MAX_PLAYER_MOVEMENTS;
@@ -13,6 +13,7 @@ Player::Player() : Entity(x, y, w, h)
 	h = PLAYER_HEIGHT;
 	x = GetScreenWidth() / 2;
 	y = GetScreenHeight() / 2;
+	color = SKYBLUE;
 }
 
 Player::~Player()
@@ -22,9 +23,9 @@ Player::~Player()
 void Player::draw()
 {
 	if (isAlive)
-		DrawRectangle(x, y, w, h, GREEN);
+		DrawRectangle(x, y, w, h, color);
 	else
-		DrawRectangle(x, y, w, h, WHITE);
+		DrawRectangle(x, y, w, h, DARKGRAY);
 }
 
 void Player::movement()

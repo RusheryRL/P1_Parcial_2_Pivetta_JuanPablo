@@ -45,6 +45,9 @@
     <ClCompile Include="src\game\HUD.cpp">
       <Filter>Resource Files\Game</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\Game.cpp">
+      <Filter>Resource Files\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\objects\Entity.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
     <ClInclude Include="src\game\HUD.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\Game.h">
       <Filter>Header Files\Game</Filter>
     </ClInclude>
   </ItemGroup>

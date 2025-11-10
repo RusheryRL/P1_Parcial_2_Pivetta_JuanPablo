@@ -1,4 +1,7 @@
 #pragma once
+#include "raylib.h"
+
+
 class Entity
 {
 protected:
@@ -6,8 +9,9 @@ protected:
 	float y;
 	float h;
 	float w;
+	Color color;
 public:
-	Entity(float x, float y, float w, float h);
+	Entity(float x, float y, float w, float h, Color color);
 	virtual ~Entity();
 
 	virtual void draw() = 0;
